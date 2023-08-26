@@ -1,7 +1,7 @@
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 # 말을 이어서하는 모드
 # from langchain.llms import OpenAI
