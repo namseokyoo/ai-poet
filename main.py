@@ -25,7 +25,7 @@ content = st.text_input('시의 주제를 입력해 주세요', )
 
 if st.button('시 작성 요청하기'):
     with st.spinner('시를 쓰고 있습니다...'):
-        # result = llm.predict(content + "에 대한 시를 써줘")
+        result = llm.predict(content + "에 대한 시를 써줘")
         # result = llm.predict("please write a poem about" + content + ":")
-        result = llm.predict("hello")
+        # result = llm.predict("hello")
         st.write(result)
