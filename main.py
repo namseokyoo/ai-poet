@@ -1,4 +1,4 @@
-# from langchain.chat_models import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from langchain.llms import CTransformers
 from streamlit_extras.buy_me_a_coffee import button
@@ -7,17 +7,17 @@ from streamlit_extras.buy_me_a_coffee import button
 
 
 # chat_model = llama
-llm = CTransformers(
-    model="llama-2-7b-chat.ggmlv3.q2_K.bin",
-    model_type="llama"
-)
+# llm = CTransformers(
+#     model="llama-2-7b-chat.ggmlv3.q2_K.bin",
+#     model_type="llama"
+# )
 
 # buy me a coffee
 button(username="namseokyoo", floating=True, width=221)
 
 
-# Chat_model = ChatOpenAI()
-# llm = ChatOpenAI()
+Chat_model = ChatOpenAI()
+llm = ChatOpenAI()
 
 st.title('인공지능 시인 :sunglasses:')
 
